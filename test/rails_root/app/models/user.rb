@@ -6,7 +6,7 @@ class User < ActiveRecord::Base
   acts_as_muck_user
   acts_as_muck_sharer
   has_activities
-  
+  has_muck_profile
   def feed_to
     self
   end
