@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-shares}
-  s.version = "0.1.7"
+  s.version = "0.1.8"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2009-10-29}
+  s.date = %q{2009-11-13}
   s.description = %q{The share engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -87,7 +87,6 @@ Gem::Specification.new do |s|
      "tasks/muck_shares_tasks.rake",
      "test/rails_root/.gitignore",
      "test/rails_root/.rake_tasks",
-     "test/rails_root/Capfile",
      "test/rails_root/Rakefile",
      "test/rails_root/app/controllers/application_controller.rb",
      "test/rails_root/app/controllers/default_controller.rb",
@@ -95,6 +94,7 @@ Gem::Specification.new do |s|
      "test/rails_root/app/models/.keep",
      "test/rails_root/app/models/activity.rb",
      "test/rails_root/app/models/comment.rb",
+     "test/rails_root/app/models/profile.rb",
      "test/rails_root/app/models/share.rb",
      "test/rails_root/app/models/user.rb",
      "test/rails_root/app/models/user_session.rb",
@@ -120,6 +120,7 @@ Gem::Specification.new do |s|
      "test/rails_root/db/migrate/20090402234137_create_languages.rb",
      "test/rails_root/db/migrate/20090426041056_create_countries.rb",
      "test/rails_root/db/migrate/20090426041103_create_states.rb",
+     "test/rails_root/db/migrate/20090512013727_create_profiles.rb",
      "test/rails_root/db/migrate/20090602041838_create_users.rb",
      "test/rails_root/db/migrate/20090608073052_create_friends.rb",
      "test/rails_root/db/migrate/20090613173314_create_comments.rb",
@@ -308,16 +309,8 @@ Gem::Specification.new do |s|
      "test/rails_root/script/process/spawner",
      "test/rails_root/script/runner",
      "test/rails_root/script/server",
-     "test/rails_root/test/factories.rb",
      "test/rails_root/test/functional/.keep",
      "test/rails_root/test/functional/shares_controller_test.rb",
-     "test/rails_root/test/mocks/development/.keep",
-     "test/rails_root/test/mocks/test/.keep",
-     "test/rails_root/test/shoulda_macros/controller.rb",
-     "test/rails_root/test/shoulda_macros/forms.rb",
-     "test/rails_root/test/shoulda_macros/models.rb",
-     "test/rails_root/test/shoulda_macros/pagination.rb",
-     "test/rails_root/test/shoulda_macros/plugins.rb",
      "test/rails_root/test/test_helper.rb",
      "test/rails_root/test/unit/.keep",
      "test/rails_root/test/unit/share_test.rb",
@@ -327,7 +320,7 @@ Gem::Specification.new do |s|
      "test/rails_root/vendor/plugins/ssl_requirement/test/ssl_requirement_test.rb",
      "uninstall.rb"
   ]
-  s.homepage = %q{http://github.com/jbasdf/muck_shares}
+  s.homepage = %q{http://github.com/tatemae/muck_shares}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubyforge_project = %q{muck-shares}
@@ -339,6 +332,7 @@ Gem::Specification.new do |s|
      "test/rails_root/app/helpers/application_helper.rb",
      "test/rails_root/app/models/activity.rb",
      "test/rails_root/app/models/comment.rb",
+     "test/rails_root/app/models/profile.rb",
      "test/rails_root/app/models/share.rb",
      "test/rails_root/app/models/user.rb",
      "test/rails_root/app/models/user_session.rb",
@@ -358,6 +352,7 @@ Gem::Specification.new do |s|
      "test/rails_root/db/migrate/20090402234137_create_languages.rb",
      "test/rails_root/db/migrate/20090426041056_create_countries.rb",
      "test/rails_root/db/migrate/20090426041103_create_states.rb",
+     "test/rails_root/db/migrate/20090512013727_create_profiles.rb",
      "test/rails_root/db/migrate/20090602041838_create_users.rb",
      "test/rails_root/db/migrate/20090608073052_create_friends.rb",
      "test/rails_root/db/migrate/20090613173314_create_comments.rb",
@@ -374,13 +369,7 @@ Gem::Specification.new do |s|
      "test/rails_root/features/support/paths.rb",
      "test/rails_root/public/dispatch.rb",
      "test/rails_root/script/create_project.rb",
-     "test/rails_root/test/factories.rb",
      "test/rails_root/test/functional/shares_controller_test.rb",
-     "test/rails_root/test/shoulda_macros/controller.rb",
-     "test/rails_root/test/shoulda_macros/forms.rb",
-     "test/rails_root/test/shoulda_macros/models.rb",
-     "test/rails_root/test/shoulda_macros/pagination.rb",
-     "test/rails_root/test/shoulda_macros/plugins.rb",
      "test/rails_root/test/test_helper.rb",
      "test/rails_root/test/unit/share_test.rb",
      "test/rails_root/test/unit/user_test.rb",
