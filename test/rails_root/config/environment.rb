@@ -21,6 +21,8 @@ Rails::Initializer.run do |config|
   config.gem "bcrypt-ruby", :lib => "bcrypt", :version => ">=2.0.5"
   config.gem "acts-as-taggable-on"
   config.gem "awesome_nested_set"
+  config.gem "geokit"
+  config.gem "sanitize"
   config.gem "friendly_id"
   config.gem "paperclip"
   config.gem "babelphish"

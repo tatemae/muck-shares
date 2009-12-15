@@ -1,48 +1,47 @@
 jQuery(document).ready(function() {
-	apply_share_methods();
+	apply_activity_ajax_methods();
 });
 
-function apply_share_methods(){
-	setup_share_submit();
-	hide_share_boxes();
-	apply_share_hover();
+function apply_activity_ajax_methods(){
+	setup_comment_submit();
+	hide_comment_boxes();
+	apply_comment_hover();
 	apply_activity_hover();
-	jQuery('.activity-no-shares').hide();
-	
-	jQuery('.activity-has-shares').find('textarea').click(function(){
-		show_share_box(this);
+	jQuery('.activity-no-comments').hide();	
+	jQuery('.activity-has-comments').find('textarea').click(function(){
+		show_comment_box(this);
 	});
-	jQuery('.activity-has-shares').find('textarea').blur(function(){
+	jQuery('.activity-has-comments').find('textarea').blur(function(){
 		textarea = jQuery(this);
 		if (textarea.val() == ''){
-			hide_share_boxes();
+			hide_comment_boxes();
 		}
 	});
 	
-	jQuery(".make-share").unbind();
-	jQuery('.make-share').click(function(){
-		var id = this.id.replace('make_share_activity_', '');
-		var share_box = jQuery('#share_activity_' + id);
-		share_box.find('textarea').removeClass('min');
-		share_box.find('textarea').addClass('max');
-		share_box.show();
-		share_box.find('textarea').get(0).focus();
-		share_box.find('textarea').blur(function(){
+	jQuery(".make-comment").unbind();
+	jQuery('.make-comment').click(function(){
+		var id = this.id.replace('make_comment_activity_', '');
+		var comment_box = jQuery('#comment_activity_' + id);
+		comment_box.find('textarea').removeClass('min');
+		comment_box.find('textarea').addClass('max');
+		comment_box.show();
+		comment_box.find('textarea').get(0).focus();
+		comment_box.find('textarea').blur(function(){
 			if (jQuery(this).val() == ''){
-				jQuery(this).closest('.activity-share').hide();
+				jQuery(this).closest('.activity-comment').hide();
 			}
 		});
 		return false;
 	});
 }
 
-function setup_share_submit(){
-	jQuery(".share-submit").unbind();
-	jQuery(".share-submit").click(function() {
+function setup_comment_submit(){
+	jQuery(".comment-submit").unbind();
+	jQuery(".comment-submit").click(function() {
     jQuery(this).hide();
-		jQuery(this).parents('.share-form-wrapper').siblings('.actor-icon').hide();
+		jQuery(this).parents('.comment-form-wrapper').siblings('.actor-icon').hide();
 		jQuery(this).siblings('textarea').hide();
-		jQuery(this).parent().append('<p class="share-loading"><img src="/images/spinner.gif" alt="loading..." /> ' + ADD_COMMENT_MESSAGE + '</p>');
+		jQuery(this).parent().append('<p class="comment-loading"><img src="/images/spinner.gif" alt="loading..." /> ' + ADD_COMMENT_MESSAGE + '</p>');
 		var form = jQuery(this).parents('form');
     jQuery.post(form.attr('action'), form.serialize() + '&format=json',
       function(data){
@@ -50,32 +49,32 @@ function setup_share_submit(){
         if(!json.success){
           jQuery.jGrowl.info(json.message);
         } else {
-					jQuery('.share-loading').remove();
-					jQuery('.activity-has-shares').find('textarea').show();
-					var share_box = jQuery('#share_activity_' + json.parent_id);
-					share_box.before(json.html);
-					share_box.removeClass('activity-no-shares');
-					share_box.addClass('activity-has-shares');
-					share_box.find('textarea').show();
-					apply_share_methods();
+					jQuery('.comment-loading').remove();
+					jQuery('.activity-has-comments').find('textarea').show();
+					var comment_box = jQuery('#comment_activity_' + json.parent_id);
+					comment_box.before(json.html);
+					comment_box.removeClass('activity-no-comments');
+					comment_box.addClass('activity-has-comments');
+					comment_box.find('textarea').show();
+					apply_activity_ajax_methods();
 				}
       });
     return false;
   });
 }
 
-function hide_share_boxes(){
-	jQuery('.activity-has-shares').children('.actor-icon').hide();
-	jQuery('.activity-has-shares').find('.button').hide();
-	jQuery('.activity-has-shares').find('textarea').val(COMMENT_PROMPT);
-	jQuery('.activity-has-shares').find('textarea').addClass('min');
+function hide_comment_boxes(){
+	jQuery('.activity-has-comments').children('.actor-icon').hide();
+	jQuery('.activity-has-comments').find('.button').hide();
+	jQuery('.activity-has-comments').find('textarea').val(COMMENT_PROMPT);
+	jQuery('.activity-has-comments').find('textarea').addClass('min');
 }
 
-function show_share_box(obj){
+function show_comment_box(obj){
 	textarea = jQuery(obj);
 	textarea.addClass('max');
 	textarea.removeClass('min');
-	textarea.closest('.share-form-wrapper').siblings('.actor-icon').show();
+	textarea.closest('.comment-form-wrapper').siblings('.actor-icon').show();
 	textarea.siblings('.button').show();
 	if (textarea.val() == COMMENT_PROMPT) {
 		textarea.val('');
@@ -101,8 +100,8 @@ function apply_activity_hover(){
      function () { jQuery(this).removeClass('activity-hover'); } );
 }
 
-function apply_share_hover(){
-	jQuery('.activity-share').hover(
-     function () { jQuery(this).addClass('share-hover'); }, 
-     function () { jQuery(this).removeClass('share-hover'); } );
+function apply_comment_hover(){
+	jQuery('.activity-comment').hover(
+     function () { jQuery(this).addClass('comment-hover'); }, 
+     function () { jQuery(this).removeClass('comment-hover'); } );
 }

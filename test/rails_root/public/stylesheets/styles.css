@@ -1,6 +1,7 @@
 /* general */
 .center{text-align:center;}
 #popup_wrapper{width:auto;}
+.waiting{margin:3px 0;padding-left:20px;background:transparent url('/images/spinner.gif') no-repeat scroll left bottom;}
 
 /* forms */
 input{margin:0 10px 5px 0;padding:4px;font-size:1.3em;}
@@ -23,6 +24,7 @@ form fieldset input[type="text"],form fieldset input[type="password"]{width:500p
 .button-link {background-color:transparent;border-top-width: 0px;border-left-width: 0px;border-right-width: 0px;border-bottom-width: 0px;}
 
 /*images*/
+.tiny{width:24px;height:24px;}
 .icon{width:50px;height:50px;}
 .thumb{width:100px;height:100px;}
 .medium{width:300px;height:300px;}
@@ -83,7 +85,5 @@ div.jGrowl div.jGrowl-notification h2{text-align:left;font-weight:bold;padding:5
 #errorExplanation p{color:#333;margin-bottom:0;padding:5px;}
 #errorExplanation ul li{list-style:square;}
 
-/* iFrame */
-.inner_shadow {-moz-background-clip:border;-moz-background-inline-policy:continuous;-moz-background-origin:padding;background:transparent url(/images/nothing.png) repeat-x scroll left bottom;height:3px;width:100%;}
-.framed_content{height:100%;margin-bottom:-1px;width:100%;}
-#content_iframe{border-top:1px solid #BCC5D3;border-width:1px 0 0;display:block;display:block;}
+/* support */
+.support-information{font-size:9px;color:#333;}
