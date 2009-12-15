@@ -17,9 +17,9 @@ class ShareTest < ActiveSupport::TestCase
     should_belong_to :shared_by
     should_have_many :comments
     
-    should_have_named_scope :by_newest
-    should_have_named_scope :by_oldest
-    should_have_named_scope :recent
+    should_scope_by_newest
+    should_scope_by_oldest
+    should_scope_recent
     
     should "require uri" do
       assert_no_difference 'Share.count' do
