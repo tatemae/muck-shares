@@ -12,9 +12,9 @@ module MuckShares
     def define
       
       namespace :muck do
-        namespace :shares do
+        namespace :sync do
           desc "Sync required files from muck shares."
-          task :sync do
+          task :shares do
             path = File.join(File.dirname(__FILE__), *%w[.. ..])
             system "rsync -ruv #{path}/db ."
             #system "rsync -ruv #{path}/public ."

@@ -6,7 +6,7 @@ zh-TW:
     shares: 
       add_share: 共享
       add_share_button: 共享
-      adding_share: 共享網頁...
+      adding_share: "共享網頁 ..."
       cancel_share_button: 取消
       cant_delete_share: 您沒有權限刪除該共享
       create_error: "無法創建共享：{{errors}}"
