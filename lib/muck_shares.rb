@@ -1,4 +1,3 @@
-ActiveRecord::Base.class_eval { include ActiveRecord::Acts::MuckShare }
-ActiveRecord::Base.class_eval { include ActiveRecord::Acts::MuckSharer }
-ActionController::Base.send :helper, MuckSharesHelper
-I18n.load_path += Dir[ File.join(File.dirname(__FILE__), '..', 'locales', '*.{rb,yml}') ]
+require 'muck_shares/models/share'
+require 'muck_shares/models/sharer'
+require 'muck_shares/engine'

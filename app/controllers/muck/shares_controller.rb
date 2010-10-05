@@ -1,5 +1,4 @@
 class Muck::SharesController < ApplicationController
-  unloadable
   
   before_filter :login_required, :except => [:index]
   before_filter :setup_user

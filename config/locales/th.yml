@@ -1,0 +1,22 @@
+--- 
+th: 
+  muck: 
+    activity_templates: 
+      share: หุ้น
+    shares: 
+      add_share: แบ่งปัน
+      add_share_button: แบ่งปัน
+      adding_share: "แบ่งปัน หน้า ..."
+      cancel_share_button: ยกเลิก
+      cant_delete_share: "คุณ ไม่ ได้ รับ สิทธิ์ ใน การ ลบ เปิดเผย ว่า"
+      create_error: "ไม่ สามารถ สร้าง ร่วม: %{errors}"
+      create_success: "สาธารณะ เรียบร้อย หน้า"
+      login_prompt: "เข้า สู่ ระบบ เพื่อ แบ่งปัน"
+      message: ข้อความ
+      new_share: "หุ้น Link"
+      problem_adding_share: "มี ปัญหา การ เพิ่ม หุ้น ของ คุณ คือ"
+      share_activity_content: "สาธารณะ %{link}}. %{message}"
+      share_removed: "ร่วม ออก สำเร็จ."
+      share_title: "แบ่งปัน นี้ Link"
+      title: "ชื่อ เรื่อง"
+      uri: Url
