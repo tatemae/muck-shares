@@ -2,21 +2,21 @@
 ro: 
   muck: 
     activity_templates: 
-      share: Acţiunile
+      share: Acţiuni
     shares: 
-      add_share: Împărtăşi
-      add_share_button: Împărtăşi
-      adding_share: "Schimbul de pagină ..."
-      cancel_share_button: Anulaţi
+      add_share: Share
+      add_share_button: Share
+      adding_share: "Partajare pagină ..."
+      cancel_share_button: Anula
       cant_delete_share: "Nu aveţi permisiunea de a şterge care împărtăşesc"
-      create_error: "Nu am putut crea parts: %{errors}"
-      create_success: "Cu succes Shared Page"
+      create_error: "Nu am putut crea cota: %{errors}"
+      create_success: "partajate cu succes pagina"
       login_prompt: "Login pentru a partaja"
-      message: Message
+      message: Mesaj
       new_share: "Share un link"
-      problem_adding_share: "Nu a fost o problemă adăugarea de partea ta"
-      share_activity_content: "Shared %{link}}. %{message}"
-      share_removed: "Împarte cu succes eliminat."
-      share_title: "Share This Link"
-      title: Title
+      problem_adding_share: "Nu a fost o problemă la adăugarea partea ta"
+      share_activity_content: "partajate %{link}}. %{message}"
+      share_removed: "Share eliminat cu succes."
+      share_title: "Share acest link"
+      title: Titlu
       uri: Url-ul

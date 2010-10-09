@@ -4,19 +4,19 @@ hi:
     activity_templates: 
       share: शेयर
     shares: 
-      add_share: हिस्सा
-      add_share_button: हिस्सा
-      adding_share: "पृष्ठ शेयरिंग ..."
-      cancel_share_button: "रद्द करें"
-      cant_delete_share: "तुम उस हिस्से हटाने की अनुमति नहीं है"
-      create_error: "बनाएँ: नहीं किया जा सका शेयर %{errors}"
-      create_success: "सफलतापूर्वक साझा पृष्ठ"
-      login_prompt: "लॉगिन साझा करने के लिए"
+      add_share: शेयर
+      add_share_button: शेयर
+      adding_share: "पेज साझा ..."
+      cancel_share_button: रद्द
+      cant_delete_share: "आपको लगता है कि शेयर हटाने की अनुमति नहीं है"
+      create_error: "साझा नहीं बनाया जा सका: %{errors}"
+      create_success: "सफलतापूर्वक पृष्ठ साझा"
+      login_prompt: "लॉग इन साझा करने के लिए"
       message: संदेश
-      new_share: "साझा एक लिंक"
-      problem_adding_share: "वहाँ एक अपने हिस्से जोड़ने समस्या थी"
-      share_activity_content: "%{link}}. साझा %{message}"
+      new_share: "एक लिंक साझा करें"
+      problem_adding_share: "वहाँ एक अपने हिस्से जोड़ने में समस्या थी"
+      share_activity_content: "साझा %{link}}. %{message}"
       share_removed: "शेयर सफलतापूर्वक हटा दिया."
-      share_title: "शेयर इस कड़ी"
+      share_title: "इस लिंक साझा करें"
       title: शीर्षक
       uri: Url

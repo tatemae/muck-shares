@@ -2,14 +2,20 @@ require File.dirname(__FILE__) + '/../spec_helper'
 
 describe Muck::SharesController do
 
+  render_views
+  
+  before do
+    @other_user = Factory(:user)
+  end
+  
   describe "not logged in" do
     before do
       @user = Factory(:user)
     end
     describe "GET index user specified" do
       before do
-        @user.shares.build(Factory.attributes_for(:share))
-        @user.shares.build(Factory.attributes_for(:share))
+        @user.shares.build(Factory.attributes_for(:share, :shared_by => @other_user))
+        @user.shares.build(Factory.attributes_for(:share, :shared_by => @other_user))
         get :index, :user_id => @user.to_param, :format => 'html'
       end
       it { should_not set_the_flash }
@@ -70,8 +76,8 @@ describe Muck::SharesController do
 
     describe "GET index no user specified" do
       before do
-        @user.shares.create(Factory.attributes_for(:share))
-        @user.shares.create(Factory.attributes_for(:share))
+        @user.shares.create(Factory.attributes_for(:share, :shared_by => @other_user))
+        @user.shares.create(Factory.attributes_for(:share, :shared_by => @other_user))
         get :index, :format => 'html'
       end
       it { should_not set_the_flash }
@@ -81,8 +87,8 @@ describe Muck::SharesController do
   
     describe "GET index user specified" do
       before do
-        @user.shares.create(Factory.attributes_for(:share))
-        @user.shares.create(Factory.attributes_for(:share))
+        @user.shares.create(Factory.attributes_for(:share, :shared_by => @other_user))
+        @user.shares.create(Factory.attributes_for(:share, :shared_by => @other_user))
         get :index, :user_id => @user.to_param, :format => 'html'
       end
       it { should_not set_the_flash }
@@ -92,19 +98,50 @@ describe Muck::SharesController do
     
     describe "DELETE to destroy" do
       before do
-        @share = @user.shares.create(Factory.attributes_for(:share))
+        @share = @other_user.shares.create(Factory.attributes_for(:share, :shared_by => @user))
         @no_delete_share = Factory(:share)
       end
-      it "should delete share" do
-        lambda{
-          delete :destroy, { :id => @share.to_param, :format => 'json' }
-          @response.body.should include(I18n.t('muck.shares.share_removed'))          
-        }.should change(Share, :count).by(-1)
+      describe 'html' do
+        it "should delete share" do
+          lambda{
+            delete :destroy, :id => @share.to_param
+            should set_the_flash.to(I18n.t('muck.shares.share_removed'))
+            should redirect_to @user
+          }.should change(Share, :count).by(-1)
+        end
+        it "should not delete share" do
+          lambda{
+            delete :destroy, :id => @no_delete_share.to_param
+          }.should_not change(Share, :count)
+        end
+        
       end
-      it "should not delete share" do
-        lambda{
-          delete :destroy, { :id => @no_delete_share.to_param, :format => 'json' }          
-        }.should_not change(Share, :count)
+      describe 'js' do
+        it "should delete share" do
+          lambda{
+            delete :destroy, :id => @share.to_param, :format => 'js'
+            response.body.should include('jQuery')          
+          }.should change(Share, :count).by(-1)
+        end
+        it "should not delete share" do
+          lambda{
+            delete :destroy, :id => @no_delete_share.to_param, :format => 'js'
+          }.should_not change(Share, :count)
+        end
+
+      end
+      describe 'json' do
+        it "should delete share" do
+          lambda{
+            delete :destroy, :id => @share.to_param, :format => 'json'
+            response.body.should include(I18n.t('muck.shares.share_removed'))          
+          }.should change(Share, :count).by(-1)
+        end
+        it "should not delete share" do
+          lambda{
+            delete :destroy, :id => @no_delete_share.to_param, :format => 'json'
+          }.should_not change(Share, :count)
+        end
       end
     end
 

@@ -8,15 +8,15 @@ ca:
       add_share_button: Compartir
       adding_share: "Compartir la pàgina ..."
       cancel_share_button: Cancel
-      cant_delete_share: "Vostè no té permís per eliminar que la quota de"
+      cant_delete_share: "No té permís per eliminar que comparteixen"
       create_error: "No s&#39;ha pogut crear el recurs compartit: %{errors}"
-      create_success: "Èxit compartit pàgina"
+      create_success: "Compartit correctament la pàgina"
       login_prompt: "Inicia sessió per compartir"
       message: Missatge
       new_share: "Compartir un enllaç"
       problem_adding_share: "Hi va haver un problema en afegir a la seva quota de"
       share_activity_content: "compartida %{link}}. %{message}"
       share_removed: "Compartir eliminat amb èxit."
-      share_title: "Comparteix aquest Link"
+      share_title: "Compartir aquest enllaç"
       title: Títol
       uri: Url

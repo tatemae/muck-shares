@@ -4,19 +4,19 @@ sr:
     activity_templates: 
       share: Акције
     shares: 
-      add_share: Поделити
-      add_share_button: Поделити
-      adding_share: "Дељење страницу ..."
-      cancel_share_button: Откажи
-      cant_delete_share: "Немате дозволу да избришете који деле"
-      create_error: "Није могуће направити деле: %{errors}"
-      create_success: "Успешно заједничку страницу"
-      login_prompt: "Улогуј се да делите"
+      add_share: Поделите
+      add_share_button: Поделите
+      adding_share: "Дељење страна ..."
+      cancel_share_button: Отказати
+      cant_delete_share: "Немате дозволу за брисање које деле"
+      create_error: "Не могу да направим Схаре: %{errors}"
+      create_success: "Успешно дели страница"
+      login_prompt: "Пријава за дељење"
       message: Порука
-      new_share: "Делите линк"
-      problem_adding_share: "Дошло је до проблема додавањем акција"
-      share_activity_content: "дељене %{link}}. %{message}"
+      new_share: "Поделите линк"
+      problem_adding_share: "Дошло је до проблема и додао свој део"
+      share_activity_content: "дели %{link}}. %{message}"
       share_removed: "Поделите успешно уклоњен."
-      share_title: "Поделите овај линк"
+      share_title: "Подели овај линк"
       title: Наслов
-      uri: Урл
+      uri: УРЛ

@@ -5,19 +5,19 @@
     activity_templates: 
       share: Aksjer
     shares: 
-      add_share: Dele
-      add_share_button: Dele
-      adding_share: "Deling side ..."
+      add_share: Del
+      add_share_button: Del
+      adding_share: "Deling siden ..."
       cancel_share_button: Avbryt
-      cant_delete_share: "Du har ikke tillatelse til å slette denne aksje"
-      create_error: "Klarte ikke opprette aksjen: %{errors}"
-      create_success: "Successfully delt siden"
+      cant_delete_share: "Du har ikke tillatelse til å slette som deler"
+      create_error: "Kunne ikke opprette aksjen: %{errors}"
+      create_success: "Vellykket delt siden"
       login_prompt: "Logg inn for å dele"
       message: Melding
       new_share: "Del en kobling"
-      problem_adding_share: "Det var et problem å legge din del"
+      problem_adding_share: "Det oppstod et problem å legge din andel"
       share_activity_content: "delte %{link}}. %{message}"
       share_removed: "Del fjernet."
-      share_title: "Share This Link"
+      share_title: "Del denne Link"
       title: Tittel
       uri: Url

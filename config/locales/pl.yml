@@ -4,17 +4,17 @@ pl:
     activity_templates: 
       share: Akcje
     shares: 
-      add_share: Dzielić
-      add_share_button: Dzielić
+      add_share: Poleć
+      add_share_button: Poleć
       adding_share: "Udostępnianie strony ..."
       cancel_share_button: Anuluj
-      cant_delete_share: "Nie masz uprawnień do usuwania, że akcje"
-      create_error: "Nie można utworzyć akcji: %{errors}"
-      create_success: "Pomyślnie współużytkowane"
+      cant_delete_share: "Nie masz uprawnień do usunięcia tego udziału"
+      create_error: "Nie można utworzyć udział: %{errors}"
+      create_success: "Pomyślnie udostępnionej strony"
       login_prompt: "Zaloguj się do akcji"
       message: Wiadomość
-      new_share: "Poleć link"
-      problem_adding_share: "Nie było problemu dodawania akcji"
+      new_share: "Poleć Link"
+      problem_adding_share: "Wystąpił problem dodawania akcji"
       share_activity_content: "wspólne %{link}}. %{message}"
       share_removed: "Poleć pomyślnie usunięty."
       share_title: "Poleć ten link"

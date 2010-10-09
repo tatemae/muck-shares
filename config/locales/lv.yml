@@ -4,19 +4,19 @@ lv:
     activity_templates: 
       share: Akcijas
     shares: 
-      add_share: Dalīties
-      add_share_button: Dalīties
-      adding_share: "Sharing lapa ..."
+      add_share: Daļa
+      add_share_button: Daļa
+      adding_share: "Dalīšanās lapu ..."
       cancel_share_button: Atcelt
-      cant_delete_share: "Jums nav tiesību dzēst šo daļu"
-      create_error: "Neizdevās izveidot daļa: %{errors}"
-      create_success: "Veiksmīgi kopīgi page"
-      login_prompt: "Login to daļu"
-      message: Message
-      new_share: "Share Link"
-      problem_adding_share: "Radās problēma pievienojot savu daļu"
+      cant_delete_share: "Jums nav tiesību dzēst šo akciju"
+      create_error: "Nevar izveidot daļa: %{errors}"
+      create_success: "Veiksmīgi koplietots lapa"
+      login_prompt: "Login dalīties"
+      message: Ziņu
+      new_share: "Akciju Link"
+      problem_adding_share: "Radās problēma, pievienojot savu daļu"
       share_activity_content: "kopīgi %{link}}. %{message}"
-      share_removed: "Share veiksmīgi noņemts."
-      share_title: "Share This Link"
+      share_removed: "Daļu veiksmīgi noņemts."
+      share_title: "Koplietojiet šo saiti"
       title: Nosaukums
       uri: Url

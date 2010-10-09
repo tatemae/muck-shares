@@ -4,19 +4,19 @@ pt-PT:
     activity_templates: 
       share: Ações
     shares: 
-      add_share: Compartilhar
-      add_share_button: Compartilhar
-      adding_share: "Compartilhando a página ..."
+      add_share: Compartilhe
+      add_share_button: Compartilhe
+      adding_share: "Compartilhamento de página ..."
       cancel_share_button: Cancelar
-      cant_delete_share: "Você não tem permissão para excluir que a quota"
-      create_error: "Não foi possível criar as partes: %{errors}"
+      cant_delete_share: "Você não tem permissão para excluir essa parte"
+      create_error: "Não foi possível criar o compartilhamento: %{errors}"
       create_success: "Compartilhada com êxito página"
-      login_prompt: "Entrar para partes"
+      login_prompt: "Entrar para compartilhar"
       message: Mensagem
-      new_share: "Share a link"
-      problem_adding_share: "Houve um problema de adicionar suas partes"
-      share_activity_content: "compartilhada %{link}}. %{message}"
+      new_share: "Compartilhar um Link"
+      problem_adding_share: "Houve um problema ao adicionar a sua parte"
+      share_activity_content: "compartilhado %{link}}. %{message}"
       share_removed: "Compartilhe removido com sucesso."
-      share_title: "Share This Link"
+      share_title: "Compartilhe este link"
       title: Título
       uri: Url

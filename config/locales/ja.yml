@@ -4,19 +4,19 @@ ja:
     activity_templates: 
       share: 株式
     shares: 
-      add_share: 共有する
-      add_share_button: 共有する
+      add_share: シェア
+      add_share_button: シェア
       adding_share: ページを共有する...
       cancel_share_button: キャンセル
-      cant_delete_share: アクセス許可は、共有を削除する必要はありません
+      cant_delete_share: あなたはその共有を削除する権限を持っていない
       create_error: "共有を作成できませんでした：%{errors}"
-      create_success: 正常にページが共有
-      login_prompt: ログイン情報を共有する
+      create_success: ページを正常に共有
+      login_prompt: は、ログインして共有する
       message: メッセージ
       new_share: 共有リンク
-      problem_adding_share: 問題があるの共有を追加した
-      share_activity_content: "%{link}}.共有%{message}"
+      problem_adding_share: あなたの共有を追加する問題があった
+      share_activity_content: "共有%{link}}. %{message}"
       share_removed: 共有が正常に削除されます。
-      share_title: これを共有リンク
+      share_title: 共有このリンク
       title: タイトル
       uri: URLを

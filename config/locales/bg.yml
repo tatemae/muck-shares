@@ -6,17 +6,17 @@ bg:
     shares: 
       add_share: Дял
       add_share_button: Дял
-      adding_share: "Споделяне на страница ..."
+      adding_share: "Споделяне на страницата ..."
       cancel_share_button: Отказ
       cant_delete_share: "Вие нямате право да изтриете този дял"
-      create_error: "Неуспех при създаването на една акция: %{errors}"
-      create_success: "Успешно споделени страница"
+      create_error: "не може да бъде създаден дял: %{errors}"
+      create_success: "Успешно споделена страница"
       login_prompt: "Вход за споделяне"
       message: Съобщение
-      new_share: "Споделете Линк"
-      problem_adding_share: "Имаше проблем при добавянето на вашата акция"
-      share_activity_content: "споделено %{link}}. %{message}"
-      share_removed: "Напишете успешно премахнат."
-      share_title: "Сподели тази Линк"
+      new_share: "Споделяне на линк"
+      problem_adding_share: "Имаше проблем при добавянето на своя дял"
+      share_activity_content: "споделен %{link}}. %{message}"
+      share_removed: "Сподели премахнати успешно."
+      share_title: "Споделяне на този линк"
       title: Заглавие
       uri: Url

@@ -1,21 +1,23 @@
+require 'muck_comments'
+require 'muck_activities'
+# include MuckShares::Models::MuckShare
 module MuckShares
   module Models
-    module Share
+    module MuckShare
+      extend ActiveSupport::Concern
       
       included do
-
-        belongs_to :shared_by, :class_name => "User" , :foreign_key => :shared_by_id
+        belongs_to :shared_by, :polymorphic => true
         validates_presence_of :uri
         validates_presence_of :title
           
-          MuckActivities::Models::ActivityItem
-          include MuckComments::Models::Commentable
-          
-        named_scope :by_newest, :order => "created_at DESC"
-        named_scope :by_oldest, :order => "created_at ASC"
-        named_scope :recent, lambda { { :conditions => ['created_at > ?', 1.week.ago] } }
-                            
+        scope :by_newest, :order => "shares.created_at DESC"
+        scope :by_oldest, :order => "shares.created_at ASC"
+        scope :newer_than, lambda { |*args| where("shares.created_at > ?", args.first || DateTime.now) }
         attr_protected :created_at, :updated_at
+        
+        include MuckActivities::Models::MuckActivityItem
+        include MuckComments::Models::MuckCommentable
       end
       
       # Adds activities for the share.

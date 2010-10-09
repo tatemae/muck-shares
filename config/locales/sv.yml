@@ -4,19 +4,19 @@ sv:
     activity_templates: 
       share: Aktier
     shares: 
-      add_share: Del
-      add_share_button: Del
+      add_share: Dela
+      add_share_button: Dela
       adding_share: "Dela sidan ..."
       cancel_share_button: Avbryt
-      cant_delete_share: "Du har inte behörighet att ta bort denna del"
-      create_error: "Kunde inte skapa aktie: %{errors}"
-      create_success: "Framgångsrikt delade sida"
+      cant_delete_share: "Du har inte behörighet att ta bort den aktien"
+      create_error: "Kunde inte skapa aktien: %{errors}"
+      create_success: "Har delats sida"
       login_prompt: "Logga in för att dela"
-      message: Message
-      new_share: "Share a Link"
+      message: Meddelande
+      new_share: "Dela en länk"
       problem_adding_share: "Det uppstod ett problem att lägga till din del"
       share_activity_content: "delade %{link}}. %{message}"
-      share_removed: "Dela lyckats ta bort."
-      share_title: "Share This Link"
+      share_removed: "Dela tagits bort."
+      share_title: "Dela den här länken"
       title: Titel
       uri: Url

@@ -47,11 +47,7 @@ class Muck::SharesController < ApplicationController
         flash[:notice] = t('muck.shares.share_removed')
         redirect_back_or_default(current_user)
       end
-      format.js do
-        render(:update) do |page|
-          page << "jQuery('##{@share.dom_id}').fadeOut();"
-        end
-      end
+      format.js { render :template => 'shares/destroy', :layout => false }
       format.json { render :json => { :success => true, :message => t("muck.shares.share_removed"), :share_id => @share.id } }
     end
   end
@@ -96,9 +92,7 @@ class Muck::SharesController < ApplicationController
   end
 
   def get_share_html(share)
-    render_as_html do
-      render_to_string(:partial => "shares/share", :object => share)
-    end
+    render_to_string(:partial => "shares/share", :object => share)
   end
   
   def setup_user

@@ -6,7 +6,8 @@ describe User do
     
     before do
       @user = Factory(:user)
-      @share = @user.shares.build(Factory.attributes_for(:share))
+      @other_user = Factory(:user)
+      @share = @user.shares.build(Factory.attributes_for(:share, :shared_by => @other_user))
       @share.save!
     end
     

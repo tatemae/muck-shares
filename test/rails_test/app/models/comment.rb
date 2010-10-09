@@ -1,4 +1,4 @@
 class Comment < ActiveRecord::Base
-  acts_as_muck_comment
-  MuckActivities::Models::ActivitySource
+  include MuckComments::Models::MuckComment
+  include MuckActivities::Models::MuckActivitySource
 end

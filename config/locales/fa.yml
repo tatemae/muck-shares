@@ -4,19 +4,19 @@ fa:
     activity_templates: 
       share: سهام
     shares: 
-      add_share: تقسیم
-      add_share_button: تقسیم
+      add_share: "به اشتراک گذاشتن"
+      add_share_button: "به اشتراک گذاشتن"
       adding_share: "به اشتراک گذاری صفحه..."
       cancel_share_button: انصراف
-      cant_delete_share: "شما اجازه انجام این کار را حذف کنید که سهم ندارد"
-      create_error: "امکان به اشتراک گذارید نیست : %{errors}"
-      create_success: "صفحه با موفقیت به اشتراک گذاشته"
-      login_prompt: "ورود به سهم"
+      cant_delete_share: "شما اجازه انجام این کار را حذف کنید که سهم را ندارید"
+      create_error: "آیا ایجاد نمی سهم : %{errors}"
+      create_success: "با موفقیت به اشتراک گذاشته صفحه"
+      login_prompt: "ورود برای به اشتراک گذاشتن"
       message: پیام
-      new_share: "تقسیم پیوند"
-      problem_adding_share: "بود مشکل خود را با افزودن سهم وجود دارد."
+      new_share: "به اشتراک گذاشتن یک لینک"
+      problem_adding_share: "بود مشکل اضافه کردن سهم خود وجود دارد"
       share_activity_content: "مشترک %{link}}. %{message}"
-      share_removed: "تقسیم با موفقیت حذف شد."
-      share_title: "تقسیم این لینک"
+      share_removed: "به اشتراک گذاشتن با موفقیت حذف شد."
+      share_title: "به اشتراک گذاشتن این لینک"
       title: عنوان
-      uri: آدرس
+      uri: "آدرس کلیپ"

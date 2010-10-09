@@ -4,8 +4,9 @@ describe Share do
 
   before do
     @user = Factory(:user)
+    @other_user = Factory(:user)
     @friend = Factory(:user)
-    @share = @user.shares.build(Factory.attributes_for(:share))
+    @share = @user.shares.build(Factory.attributes_for(:share, :shared_by => @other_user))
     @share.save!
   end
   
@@ -16,7 +17,7 @@ describe Share do
   
   it { should scope_by_newest }
   it { should scope_by_oldest }
-  it { should scope_recent }
+  it { should scope_newer_than }
   
   it "should require uri" do
     lambda{
@@ -48,7 +49,7 @@ describe Share do
   
   describe "user that created share" do
     it "should be able to edit the share" do
-      @share.can_edit?(@user).should be_true
+      @share.can_edit?(@other_user).should be_true
     end
   end
   

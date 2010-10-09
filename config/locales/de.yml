@@ -4,19 +4,19 @@ de:
     activity_templates: 
       share: Aktien
     shares: 
-      add_share: Anteil
-      add_share_button: Anteil
+      add_share: Empfehlen
+      add_share_button: Empfehlen
       adding_share: "Sharing-Seite ..."
       cancel_share_button: Abbrechen
-      cant_delete_share: "Sie haben keine Berechtigung für diese Freigabe zu löschen"
-      create_error: "Konnte nicht erstellt werden die Aktien: %{errors}"
-      create_success: "Erfolgreich gemeinsame Seite"
+      cant_delete_share: "Sie haben keine Berechtigung auf die Freigabe löschen"
+      create_error: "Konnte nicht erstellt werden Aktie: %{errors}"
+      create_success: "Erfolgreich freigegebenen Seite"
       login_prompt: "Login zu teilen"
       message: Nachricht
-      new_share: "Stellen Sie ein Link"
-      problem_adding_share: "Es gab ein Problem du deine Aktien"
-      share_activity_content: "gemeinsamen %{link}}. %{message}"
+      new_share: "Sagen Link"
+      problem_adding_share: "Es gab ein Problem indem Sie Ihren Anteil"
+      share_activity_content: "geteilt %{link}}. %{message}"
       share_removed: "Sagen erfolgreich entfernt."
-      share_title: "Diesen Link weiterempfehlen"
+      share_title: "Teilen Sie dieses Link"
       title: Titel
       uri: URL

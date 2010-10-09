@@ -11,12 +11,15 @@ gem 'will_paginate', "~> 3.0.pre2"
 # TODO Remove this once the validation_reflection gem is released for Rails 3 and the version has been updated in muck-engine
 gem "validation_reflection", :git => "http://github.com/redinger/validation_reflection.git", :branch => "rails-3"
 
+gem "nested_set"
+
 gem "bcrypt-ruby", :require => "bcrypt"
 gem 'overlord'
 
 gem 'muck-engine', :require => 'muck_engine', :path => "~/projects/muck-engine"
 gem 'muck-users', :require => 'muck_users', :path => "~/projects/muck-users"
 gem 'muck-profiles', :require => 'muck_profiles', :path => "~/projects/muck-profiles"
+gem 'muck-friends', :require => 'muck_friends', :path => "~/projects/muck-friends"
 gem 'muck-shares', :require => 'muck_shares', :path => '../../'
 gem 'muck-activities', :require => 'muck_activities', :path => "~/projects/muck-activities"
 gem 'muck-comments', :require => 'muck_comments', :path => "~/projects/muck-comments"

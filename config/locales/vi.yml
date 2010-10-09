@@ -7,16 +7,16 @@ vi:
       add_share: "Chia sẻ"
       add_share_button: "Chia sẻ"
       adding_share: "Chia sẻ trang ..."
-      cancel_share_button: Hủy
+      cancel_share_button: Huỷ
       cant_delete_share: "Bạn không có quyền xóa mà chia sẻ"
-      create_error: "Không thể tạo ra sự chia sẻ: %{errors}"
-      create_success: "Thành công được chia sẻ trang"
+      create_error: "Không thể tạo các chia sẻ: %{errors}"
+      create_success: "Trang chia sẻ thành công"
       login_prompt: "Đăng nhập để chia sẻ"
       message: "Thông báo"
-      new_share: "Chia sẻ một kết"
-      problem_adding_share: "Có vấn đề thêm chia sẻ của bạn"
+      new_share: "Chia sẻ một liên kết"
+      problem_adding_share: "Có một vấn đề chia sẻ của bạn thêm"
       share_activity_content: "chia sẻ %{link}}. %{message}"
-      share_removed: "Chia sẻ thành công gỡ bỏ."
-      share_title: "Chia sẻ liên kết này"
+      share_removed: "Chia sẻ thành công loại bỏ."
+      share_title: "Chia sẻ Link"
       title: "Tiêu đề"
       uri: Url

@@ -14,7 +14,7 @@ Add the gem to your gemfile:
 Create a model called share in your project and add the following:
   
   class Share < ActiveRecord::Base
-    acts_as_muck_share
+    include MuckShares::Models::MuckShare
   end
   
 This let's you add any other methods to the share model that you see fit.
@@ -22,7 +22,7 @@ This let's you add any other methods to the share model that you see fit.
 === User model
 You will need a user model that will do the sharing:
   class User < ActiveRecord::Base
-    acts_as_muck_sharer
+    include MuckShares::Models::MuckSharer
   end
 
 MuckShares will look for 'current_user' when adding new shares.

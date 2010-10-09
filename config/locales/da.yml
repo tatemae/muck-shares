@@ -8,15 +8,15 @@ da:
       add_share_button: Del
       adding_share: "Deling side ..."
       cancel_share_button: Annuller
-      cant_delete_share: "Du har ikke tilladelse til at slette den pågældende aktie"
-      create_error: "Kunne ikke oprette andel: %{errors}"
-      create_success: "Blevet delt side"
+      cant_delete_share: "Du har ikke tilladelse til at slette denne andel"
+      create_error: "Kunne ikke oprette den andel: %{errors}"
+      create_success: "Delt korrekt side"
       login_prompt: "Log ind for at dele"
       message: Besked
-      new_share: "Aktie a Link"
+      new_share: "Del et Link"
       problem_adding_share: "Der var et problem at tilføje din andel"
       share_activity_content: "delt %{link}}. %{message}"
-      share_removed: "Del med held fjernet."
-      share_title: "Dele dette link"
+      share_removed: "Del med succes fjernet."
+      share_title: "Del dette link"
       title: Titel
       uri: Url

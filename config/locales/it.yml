@@ -4,8 +4,8 @@ it:
     activity_templates: 
       share: Azioni
     shares: 
-      add_share: Condividere
-      add_share_button: Condividere
+      add_share: Condividi
+      add_share_button: Condividi
       adding_share: "Condivisione pagina ..."
       cancel_share_button: Annulla
       cant_delete_share: "Non hai il permesso di eliminare la quota"
@@ -14,9 +14,9 @@ it:
       login_prompt: "Login per condividere"
       message: Messaggio
       new_share: "Condividere un link"
-      problem_adding_share: "C&#39;è stato un problema aggiungendo la vostra quota"
-      share_activity_content: "condivisa %{link}}. %{message}"
+      problem_adding_share: "C&#39;è stato un problema di aggiungere la tua parte"
+      share_activity_content: "condiviso %{link}}. %{message}"
       share_removed: "Condividi rimosso con successo."
-      share_title: "Share This Link"
+      share_title: "Condividi questo link"
       title: Titolo
       uri: Url

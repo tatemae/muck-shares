@@ -2,21 +2,21 @@
 tr: 
   muck: 
     activity_templates: 
-      share: Payları
+      share: Hisse
     shares: 
-      add_share: Paylaşmak
-      add_share_button: Paylaşmak
-      adding_share: "Sayfa Paylaşımı ..."
+      add_share: Pay
+      add_share_button: Pay
+      adding_share: "sayfa Paylaşım ..."
       cancel_share_button: Iptal
-      cant_delete_share: "Izniniz paylaşan silmek zorunda değilsiniz"
-      create_error: "Payı oluşturulamadı: %{errors}"
-      create_success: "Başarıyla sayfası paylaşılan"
+      cant_delete_share: "Bunu paylaşmak silmek için izniniz yok"
+      create_error: "pay oluşturulamadı: %{errors}"
+      create_success: "Başarılı bir sayfa paylaştı"
       login_prompt: "Giriş paylaşmak"
-      message: Mesaj
-      new_share: "Payı Bağlantı"
-      problem_adding_share: "Bir sorun payı ekleyerek edildi"
-      share_activity_content: "%{link}}. paylaşılan %{message}"
-      share_removed: "Share başarıyla kaldırıldı."
-      share_title: "Share This Link"
-      title: Title
+      message: Mesajı
+      new_share: "Payı Link"
+      problem_adding_share: "sizin payı ekleyerek bir sorun oldu"
+      share_activity_content: "Paylaşılan %{link}}. %{message}"
+      share_removed: "Paylaşmak başarıyla kaldırıldı."
+      share_title: "Pay Bu Bağlantıyı"
+      title: Başlık
       uri: Url

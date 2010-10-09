@@ -4,19 +4,19 @@ fi:
     activity_templates: 
       share: Osakkeet
     shares: 
-      add_share: Jakaa
-      add_share_button: Jakaa
+      add_share: Jaa
+      add_share_button: Jaa
       adding_share: "Jakaminen sivu ..."
       cancel_share_button: Peruuta
-      cant_delete_share: "Sinulla ei ole oikeutta poistaa kyseisen osakkeen"
-      create_error: "Ei voitu luoda osuus: %{errors}"
-      create_success: "Onnistui jaettu sivu"
-      login_prompt: "Login jakaa"
+      cant_delete_share: "Sinulla ei ole lupaa poistaa kyseisen osakkeen"
+      create_error: "Ei voitu luoda osake: %{errors}"
+      create_success: "Onnistuneesti yhteinen sivu"
+      login_prompt: "Kirjaudu jakaa"
       message: Viesti
       new_share: "Jaa linkki"
-      problem_adding_share: "Oli ongelma lisäämällä oman osakkeen"
-      share_activity_content: "jaettu %{link}}. %{message}"
+      problem_adding_share: "Ongelma lisäämällä oman osuutesi"
+      share_activity_content: "yhteinen %{link}}. %{message}"
       share_removed: "Jaa poistettiin onnistuneesti."
-      share_title: "Share This Link"
-      title: Arvonimi
-      uri: URL
+      share_title: "Jaa linkki"
+      title: Otsikko
+      uri: Url

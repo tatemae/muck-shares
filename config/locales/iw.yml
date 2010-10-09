@@ -4,19 +4,19 @@ iw:
     activity_templates: 
       share: מניות
     shares: 
-      add_share: לשתף
-      add_share_button: לשתף
+      add_share: שתף
+      add_share_button: שתף
       adding_share: "שיתוף הדף ..."
-      cancel_share_button: ביטול
-      cant_delete_share: "אין לך הרשאה למחוק כי נתח"
+      cancel_share_button: לבטל
+      cant_delete_share: "אין לך הרשאה למחוק את המניות"
       create_error: "אין אפשרות ליצור המניות: %{errors}"
-      create_success: "בהצלחה שיתופיים"
-      login_prompt: "התחברות לשתף"
+      create_success: "שותפו בהצלחה הדף"
+      login_prompt: "כניסה כדי לשתף"
       message: הודעה
-      new_share: "שתף קישור"
+      new_share: "לשתף קישור"
       problem_adding_share: "היתה בעיה להוסיף את החלק שלך"
-      share_activity_content: "משותפת %{link}}. %{message}"
+      share_activity_content: "המשותף %{link}}. %{message}"
       share_removed: "שתף הוסר בהצלחה."
-      share_title: "Share This קישור"
-      title: כותר
-      uri: Url
+      share_title: "שתף קישור זה"
+      title: כותרת
+      uri: "כתובת האתר"

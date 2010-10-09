@@ -2,21 +2,21 @@
 ar: 
   muck: 
     activity_templates: 
-      share: سهم
+      share: أسهم
     shares: 
-      add_share: مشاركة
-      add_share_button: مشاركة
+      add_share: حصة
+      add_share_button: حصة
       adding_share: "تقاسم الصفحة..."
       cancel_share_button: إلغاء
-      cant_delete_share: "ليس لديك الإذن لحذف تلك المشاركة"
-      create_error: "لا يمكن إنشاء مشاركة : %{errors}"
-      create_success: "بنجاح صفحة مشتركة"
-      login_prompt: "الدخول للمشاركة"
+      cant_delete_share: "ليس لديك إذن لحذف تلك المشاركة"
+      create_error: "لا يمكن إنشاء المشاركة : %{errors}"
+      create_success: "الصفحة المشتركة بنجاح"
+      login_prompt: "الدخول للسهم"
       message: رسالة
       new_share: "حصة ارتباط"
-      problem_adding_share: "كانت هناك مشكلة مضيفا حصتك"
-      share_activity_content: "تقاسم %{link}}. %{message}"
-      share_removed: "حصة إزالتها بنجاح."
+      problem_adding_share: "كانت هناك مشكلة مضيفا نشاطركم"
+      share_activity_content: "المشتركة %{link}}. %{message}"
+      share_removed: "حصة إزالة بنجاح."
       share_title: "حصة هذا الرابط :"
       title: العنوان
-      uri: رابط
+      uri: "عنوان الموقع"

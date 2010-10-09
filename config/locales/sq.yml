@@ -4,19 +4,19 @@ sq:
     activity_templates: 
       share: Aksionet
     shares: 
-      add_share: Pjesë
-      add_share_button: Pjesë
-      adding_share: "Sharing faqe ..."
-      cancel_share_button: Anulo
+      add_share: Aksion
+      add_share_button: Aksion
+      adding_share: "Ndarja e faqe ..."
+      cancel_share_button: Anuloj
       cant_delete_share: "Ju nuk keni leje të fshini që ndajnë"
-      create_error: "Nuk mund të krijojnë pjesë: %{errors}"
-      create_success: "Përbashkëta me sukses faqe"
+      create_error: "I pamundur krijimi i ndarë: %{errors}"
+      create_success: "përbashkët me sukses faqe"
       login_prompt: "Identifikohu për të ndarë"
       message: Mesazh
-      new_share: "Add a Link"
-      problem_adding_share: "Nuk ishte një problem duke shtuar pjesën tuaj"
+      new_share: "Share a Link"
+      problem_adding_share: "Nuk ishte një problem duke shtuar pjesën tuaj të"
       share_activity_content: "përbashkët %{link}}. %{message}"
       share_removed: "Share hoq me sukses."
       share_title: "Share This Link"
-      title: Titulli
+      title: Titull
       uri: Url

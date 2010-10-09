@@ -8,12 +8,12 @@ sk:
       add_share_button: Zdieľať
       adding_share: "Zdieľanie stránku ..."
       cancel_share_button: Zrušiť
-      cant_delete_share: "Nemáte dostatočné oprávnenie na odstránenie, ktoré zdieľajú"
+      cant_delete_share: "Nemáte oprávnenie na odstránenie, ktoré zdieľajú"
       create_error: "Nemožno vytvoriť podiel: %{errors}"
-      create_success: "Úspešne spoločná strana"
-      login_prompt: "Prihlásenie do akcií"
+      create_success: "Úspešne zdieľané stránky"
+      login_prompt: "Prihlásiť sa podeliť"
       message: Správy
-      new_share: "Share Link"
+      new_share: "Podiel Link"
       problem_adding_share: "Tam bol problém pridať svoj podiel"
       share_activity_content: "zdieľané %{link}}. %{message}"
       share_removed: "Podiel úspešne odstránený."

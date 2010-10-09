@@ -2,21 +2,21 @@
 hu: 
   muck: 
     activity_templates: 
-      share: Részvényeket
+      share: Részvények
     shares: 
-      add_share: Megoszt
-      add_share_button: Megoszt
-      adding_share: "Sharing oldal ..."
-      cancel_share_button: Szakítani
-      cant_delete_share: "Önnek nincs jogosultsága törölni ezt a részét"
-      create_error: "Nem sikerült létrehozni a részvény: %{errors}"
-      create_success: "Sikeresen megosztott page"
-      login_prompt: "Login to share"
-      message: Üzenetét
-      new_share: "Ossza meg Link"
-      problem_adding_share: "Hiba történt a hozzáadja a részvény"
+      add_share: Megosztás
+      add_share_button: Megosztás
+      adding_share: "Megosztása oldal ..."
+      cancel_share_button: Mégsem
+      cant_delete_share: "Önnek nincs jogosultsága törölni, hogy a részvény"
+      create_error: "Nem lehet létrehozni a megosztani: %{errors}"
+      create_success: "Sikeresen megosztott oldal"
+      login_prompt: "Bejelentkezés hogy megosszák"
+      message: Üzenet
+      new_share: "Ossza meg a link"
+      problem_adding_share: "Volt egy probléma hozzá a részvény"
       share_activity_content: "megosztott %{link}}. %{message}"
-      share_removed: "Oszd sikeresen eltávolították."
-      share_title: "Share This Link"
-      title: Címben
-      uri: URL
+      share_removed: "Ossza meg sikeresen eltávolítottak."
+      share_title: "Osztozik Ez Link"
+      title: Cím
+      uri: Url

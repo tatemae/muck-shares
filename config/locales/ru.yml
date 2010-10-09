@@ -4,19 +4,19 @@ ru:
     activity_templates: 
       share: Акции
     shares: 
-      add_share: Разделять
-      add_share_button: Разделять
+      add_share: Доля
+      add_share_button: Доля
       adding_share: "Обмен страницу ..."
-      cancel_share_button: Отмена
+      cancel_share_button: Отменить
       cant_delete_share: "У вас нет разрешения на удаление, что доля"
       create_error: "Не удалось создать акцию: %{errors}"
-      create_success: "Успешно обменялись страницу"
+      create_success: "Успешно общую страницу"
       login_prompt: "Войти в долю"
       message: Сообщение
-      new_share: "Отправить ссылку"
-      problem_adding_share: "Был проблема добавить свою долю"
-      share_activity_content: "Общие %{link}}. %{message}"
-      share_removed: "Доля успешно удален."
-      share_title: "Эту ссылку"
+      new_share: "Доля Ссылка"
+      problem_adding_share: "Существовал проблемы добавив свою долю"
+      share_activity_content: "общий %{link}}. %{message}"
+      share_removed: "Доля успешно удалены."
+      share_title: "Доля Ссылка"
       title: Название
       uri: Url
