@@ -6,7 +6,7 @@ user's activity feed as well as the dashboard activity feed of any users that fo
 == Setup
 Add the gem to your gemfile:
 
-  gem 'muck-shares', :require => 'muck_shares'
+  gem 'muck-shares'
 
 == Usage
 

@@ -1,4 +1,4 @@
-require 'muck_shares'
+require 'muck-shares'
 require 'rails'
 
 module MuckShares
@@ -8,7 +8,7 @@ module MuckShares
       'muck-shares'
     end
     
-    initializer 'muck_shares.helpers' do
+    initializer 'muck-shares.helpers' do
       ActiveSupport.on_load(:action_view) do
         include MuckSharesHelper
       end

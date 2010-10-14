@@ -1,5 +1,5 @@
-require 'muck_comments'
-require 'muck_activities'
+require 'muck-comments'
+require 'muck-activities'
 # include MuckShares::Models::MuckShare
 module MuckShares
   module Models

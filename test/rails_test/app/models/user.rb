@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   end
   include MuckUsers::Models::MuckUser
   include MuckShares::Models::MuckSharer
-  include MuckProfiles::Models::User
+  include MuckProfiles::Models::MuckUser
   include MuckActivities::Models::MuckActivityConsumer
 
   def feed_to
