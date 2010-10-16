@@ -1,9 +1,14 @@
 require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
+require 'rspec/core/rake_task'
 
-desc 'Default: run tests.'
+desc 'Default: run specs.'
 task :default => :spec
+RSpec::Core::RakeTask.new(:spec) do |t|
+  t.rspec_opts = ["--color", "-c", "-f progress", "-r test/rails_test/spec/spec_helper.rb"]
+  t.pattern = 'test/rails_test/spec/**/*_spec.rb'  
+end
 
 begin
   require 'rcov/rcovtask'
@@ -42,7 +47,7 @@ begin
     gemspec.name = "muck-shares"
     gemspec.summary = "The share engine for the muck system"
     gemspec.email = "justin@tatemae.com"
-    gemspec.homepage = "http://github.com/tatemae/muck_shares"
+    gemspec.homepage = "http://github.com/tatemae/muckshares"
     gemspec.description = "The share engine for the muck system."
     gemspec.authors = ["Justin Ball", "Joel Duffin"]
     gemspec.rubyforge_project = 'muck-shares'
