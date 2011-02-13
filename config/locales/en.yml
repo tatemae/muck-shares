@@ -16,6 +16,6 @@ en:
       message: "Message"
       login_prompt: "Login to share"
       share_title: "Share This Link"
-      share_activity_content: "shared %{link}}.  %{message}"
+      share_activity_content: "shared %{link}.  %{message}"
     activity_templates:
       share: Shares
