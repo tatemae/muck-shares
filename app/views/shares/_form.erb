@@ -13,7 +13,7 @@
       <%= f.text_area :message, { :label => t('muck.shares.message'),
                                   :class => 'min' } %>
     </div>
-    <%= capture(f, &block) %>
+    <%= capture(f, &block) if block -%>
     <div class="button form-row">
       <%= f.submit t('muck.shares.add_share_button'), :class => "button share-submit", :id => "share_submit_#{share.dom_id}" %>
     </div>
