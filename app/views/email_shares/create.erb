@@ -1,4 +1,8 @@
-jQuery('#share-messages-container').html('<%= @result %>');
+jQuery('#share-messages-container').html("<%= escape_javascript(@result) %>");
 jQuery('#share-messages-container').show();
-jQuery('#emails').val('');
-jQuery('#message').val('');
+jQuery('.wait-button').show();
+jQuery('.waiting').hide();
+<% if @success -%>
+  jQuery('#emails').val('');
+  jQuery('#message').val('');
+<% end -%>

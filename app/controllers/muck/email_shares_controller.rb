@@ -36,14 +36,15 @@ class Muck::EmailSharesController < ApplicationController
       end
       @emails = @emails.join(',')
       @result = t('muck.shares.share_email_success', :emails => @emails)
+      @success = true
     end
     respond_to do |format|
       format.html do
         flash[:notice] = @result
-        render :template => 'shares/new', :layout => 'popup'
+        render :template => 'email_shares/new', :layout => 'popup'
       end
-      format.pjs { render :text => @result }
-      format.js { render :text => @result }
+      format.pjs { render :template => 'email_shares/create', :layout => false  }
+      format.js { render :template => 'email_shares/create', :layout => false }
     end 
   end
   

@@ -27,5 +27,6 @@ en:
       emails_empty: You didn't specify any emails
       message_empty: You didn't specify a message
       share_email_success: "Emails have been sent to: %{emails}"
+      share_wait: Please Wait....
     activity_templates: 
       share: Shares

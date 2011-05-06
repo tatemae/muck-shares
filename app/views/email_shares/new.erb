@@ -1,8 +1,7 @@
 <div id="compose-email-share">
-  <h2><%=translate('muck.shares.share_via_email_title') %></h2>
+  <%= output_errors('', {:class => 'help-box'}) %>
+  <%= share_ajax_message_container %>
   <div id="invite-email-share">
-    <%= output_errors('', {:class => 'help-box'}) %>
-    <%= share_ajax_message_container %>
     <%= render :partial => 'invites/contacts_from_services' %>
   </div>
   <div id="email-share">
@@ -21,7 +20,8 @@
         <%= text_area_tag :message, @message %>
       </div>
       <div class="form-row">
-        <%= f.submit t('muck.shares.email_share_button'), :class => "button email-share-submit" %>
+        <%= f.submit t('muck.shares.email_share_button'), :class => "button email-share-submit wait-button" %>
+        <div class="waiting" style="display:none;"><%=translate('muck.shares.share_wait') %></div>        
       </div>
     <% end -%>
   </div>
