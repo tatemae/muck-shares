@@ -55,6 +55,7 @@ begin
     gem.add_dependency "muck-users"
     gem.add_dependency "muck-activities"
     gem.add_dependency "muck-comments"
+    gem.add_dependency "muck-invites"
     gem.files.exclude 'test/**'
     gem.test_files.exclude 'test/**'
   end

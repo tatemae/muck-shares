@@ -6,6 +6,10 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(:default, Rails.env) if defined?(Bundler)
 
+require 'ostruct'
+require 'yaml'
+::Secrets = OpenStruct.new(YAML.load_file(File.expand_path('../secrets.yml', __FILE__))[Rails.env])
+
 module RailsTest
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.

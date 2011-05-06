@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110303183433) do
+ActiveRecord::Schema.define(:version => 20110420153714) do
 
   create_table "access_code_requests", :force => true do |t|
     t.string   "email"
@@ -24,13 +24,14 @@ ActiveRecord::Schema.define(:version => 20110303183433) do
 
   create_table "access_codes", :force => true do |t|
     t.string   "code"
-    t.integer  "uses",       :default => 0,     :null => false
-    t.boolean  "unlimited",  :default => false, :null => false
+    t.integer  "uses",           :default => 0,     :null => false
+    t.boolean  "unlimited",      :default => false, :null => false
     t.datetime "expires_at"
-    t.integer  "use_limit",  :default => 1,     :null => false
+    t.integer  "use_limit",      :default => 1,     :null => false
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "sent_to"
+    t.integer  "provided_by_id"
   end
 
   add_index "access_codes", ["code"], :name => "index_access_codes_on_code"
@@ -64,6 +65,22 @@ ActiveRecord::Schema.define(:version => 20110303183433) do
 
   add_index "activity_feeds", ["activity_id"], :name => "index_activity_feeds_on_activity_id"
   add_index "activity_feeds", ["ownable_id", "ownable_type"], :name => "index_activity_feeds_on_ownable_id_and_ownable_type"
+
+  create_table "authentications", :force => true do |t|
+    t.integer  "authenticatable_id"
+    t.string   "authenticatable_type"
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "nickname"
+    t.string   "token"
+    t.string   "secret"
+    t.text     "raw_auth"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "authentications", ["authenticatable_id", "authenticatable_type"], :name => "authenticatable"
 
   create_table "comments", :force => true do |t|
     t.integer  "commentable_id",                 :default => 0
@@ -147,6 +164,23 @@ ActiveRecord::Schema.define(:version => 20110303183433) do
 
   add_index "friends", ["invited_id", "inviter_id"], :name => "index_friends_on_invited_id_and_inviter_id"
   add_index "friends", ["inviter_id", "invited_id"], :name => "index_friends_on_inviter_id_and_invited_id"
+
+  create_table "invitees", :force => true do |t|
+    t.string "email", :null => false
+  end
+
+  add_index "invitees", ["email"], :name => "index_invites_on_email"
+
+  create_table "invites", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "invitee_id",   :null => false
+    t.integer  "inviter_id",   :null => false
+    t.string   "inviter_type"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "invites", ["inviter_id", "inviter_type"], :name => "index_invites_on_inviter_id_and_inviter_type"
 
   create_table "languages", :force => true do |t|
     t.string  "name"

@@ -6,4 +6,6 @@ Rails.application.routes.draw do
     resources :shares, :controller => 'muck/shares'
   end
   
+  resources :email_shares, :controller => 'muck/email_shares'
+  
 end

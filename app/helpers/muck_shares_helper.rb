@@ -26,4 +26,8 @@ module MuckSharesHelper
     user.shares.find(:all, :conditions => ['uri = ?', uri])
   end
   
+  def share_ajax_message_container
+    output_message_container('share-messages', 'share-messages-container')
+  end
+  
 end

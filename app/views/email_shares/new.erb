@@ -1,0 +1,29 @@
+<div id="compose-email-share">
+  <h2><%=translate('muck.shares.share_via_email_title') %></h2>
+  <div id="invite-email-share">
+    <%= output_errors('', {:class => 'help-box'}) %>
+    <%= share_ajax_message_container %>
+    <%= render :partial => 'invites/contacts_from_services' %>
+  </div>
+  <div id="email-share">
+    <%= muck_form_for(:email_share, :url => {:action => 'create'}, :html => {:id => "email-share-contacts-form", :name => 'email-share-contacts-form', :class => 'ajax'} ) do |f| -%>
+      <div id="share-emails" class="form-row">
+        <label class="email-share-email" for="emails"><%=translate('muck.shares.emails') %></label>
+        <p class="email-share-email"><%=translate('muck.shares.email_friends_prompt') %></p>
+        <%= text_area_tag :emails, @emails %>
+      </div>
+      <div id="share-subject" class="form-row">
+        <label class="email-share-subject" for="subject"><%=translate('muck.shares.subject_label') %></label>
+        <%= text_field_tag :subject, @subject %>
+      </div>
+      <div id="share-message" class="form-row">
+        <label class="email-share-message" for="message"><%=translate('muck.shares.message_label') %></label>
+        <%= text_area_tag :message, @message %>
+      </div>
+      <div class="form-row">
+        <%= f.submit t('muck.shares.email_share_button'), :class => "button email-share-submit" %>
+      </div>
+    <% end -%>
+  </div>
+</div>
+<%= render :partial => 'invites/invite_scripts' %>

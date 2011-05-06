@@ -1,21 +1,31 @@
-en:
-  muck:
-    shares:
-      cant_delete_share: "You don't have permission to delete that share"
-      share_removed: "Share successfully removed."
+--- 
+en: 
+  muck: 
+    shares: 
+      add_share: Share
+      uri: Url
+      share_removed: Share successfully removed.
+      create_success: Successfully shared page
+      new_share: Share a Link
+      title: Title
+      cancel_share_button: Cancel
+      share_title: Share This Link
       create_error: "Could not create the share: %{errors}"
-      create_success: "Successfully shared page"
-      add_share: "Share"
-      add_share_button: "Share"
-      adding_share: "Sharing page..."
-      cancel_share_button: "Cancel"
-      new_share: "Share a Link"
-      problem_adding_share: "There was a problem adding your share"
-      title: "Title"
-      uri: "Url"
-      message: "Message"
-      login_prompt: "Login to share"
-      share_title: "Share This Link"
-      share_activity_content: "shared %{link}.  %{message}"
-    activity_templates:
+      adding_share: Sharing page...
+      problem_adding_share: There was a problem adding your share
+      share_via_email_title: Share
+      emails: Emails
+      add_share_button: Share
+      cant_delete_share: You don't have permission to delete that share
+      login_prompt: Login to share
+      subject_label: Subject
+      message: Message
+      share_activity_content: shared %{link}.  %{message}
+      message_label: Message
+      email_friends_prompt: "Email of friends to share with:"
+      email_share_button: Send
+      emails_empty: You didn't specify any emails
+      message_empty: You didn't specify a message
+      share_email_success: "Emails have been sent to: %{emails}"
+    activity_templates: 
       share: Shares

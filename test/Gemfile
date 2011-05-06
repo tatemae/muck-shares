@@ -1,6 +1,6 @@
 source "http://rubygems.org"
 
-gem "rails", "3.0.5"
+gem "rails", "3.0.7"
 gem 'mysql'
 
 # gem 'authlogic'
@@ -17,6 +17,8 @@ gem 'muck-shares', :path => '../'
 gem 'muck-activities', :path => "~/projects/muck-activities"
 gem 'muck-comments', :path => "~/projects/muck-comments"
 gem "muck-contents", :path => "~/projects/muck-contents"
+gem "muck-invites", :path => "~/projects/muck-invites"
+gem "muck-auth", :path => "~/projects/muck-auth"
 
 if RUBY_VERSION < '1.9'
   gem "ruby-debug"
