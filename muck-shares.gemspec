@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{muck-shares}
-  s.version = "3.1.1"
+  s.version = "3.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Justin Ball", "Joel Duffin"]
-  s.date = %q{2011-02-12}
+  s.date = %q{2011-05-06}
   s.description = %q{The share engine for the muck system.}
   s.email = %q{justin@tatemae.com}
   s.extra_rdoc_files = [
@@ -20,9 +20,15 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "app/controllers/muck/email_shares_controller.rb",
     "app/controllers/muck/shares_controller.rb",
     "app/helpers/muck_shares_helper.rb",
+    "app/mailers/share_mailer.rb",
     "app/views/activity_templates/_share.erb",
+    "app/views/email_shares/create.erb",
+    "app/views/email_shares/new.erb",
+    "app/views/share_mailer/share_email.html.erb",
+    "app/views/share_mailer/share_email.text.erb",
     "app/views/shares/_form.erb",
     "app/views/shares/_share.erb",
     "app/views/shares/destroy.js.erb",
@@ -86,11 +92,10 @@ Gem::Specification.new do |s|
   ]
   s.homepage = %q{http://github.com/tatemae/muckshares}
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.3.7}
+  s.rubygems_version = %q{1.6.0}
   s.summary = %q{The share engine for the muck system}
 
   if s.respond_to? :specification_version then
-    current_version = Gem::Specification::CURRENT_SPECIFICATION_VERSION
     s.specification_version = 3
 
     if Gem::Version.new(Gem::VERSION) >= Gem::Version.new('1.2.0') then
@@ -98,17 +103,20 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<muck-users>, [">= 0"])
       s.add_runtime_dependency(%q<muck-activities>, [">= 0"])
       s.add_runtime_dependency(%q<muck-comments>, [">= 0"])
+      s.add_runtime_dependency(%q<muck-invites>, [">= 0"])
     else
       s.add_dependency(%q<muck-engine>, [">= 0"])
       s.add_dependency(%q<muck-users>, [">= 0"])
       s.add_dependency(%q<muck-activities>, [">= 0"])
       s.add_dependency(%q<muck-comments>, [">= 0"])
+      s.add_dependency(%q<muck-invites>, [">= 0"])
     end
   else
     s.add_dependency(%q<muck-engine>, [">= 0"])
     s.add_dependency(%q<muck-users>, [">= 0"])
     s.add_dependency(%q<muck-activities>, [">= 0"])
     s.add_dependency(%q<muck-comments>, [">= 0"])
+    s.add_dependency(%q<muck-invites>, [">= 0"])
   end
 end
 
